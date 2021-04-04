@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
   },
   tabsText: {
     fontSize: 18,
-    marginHorizontal: 12
+    marginHorizontal: 12,
+    color: 'black',
   },
   selectedTab: {
     textDecorationLine: 'underline',
@@ -83,13 +84,13 @@ const TimeView: () => Node = (props) => {
       <View style={styles.row}>
         <TouchableOpacity onPress={() => setSelectingEnd(false)}>
           <Text
-            style={!isSelectingEnd && { color: colors.MAIN_COLOR }}>{moment(startDate).format('hh:mm a')}</Text>
+            style={{ color: isSelectingEnd ? 'black' : colors.MAIN_COLOR }}>{moment(startDate).format('hh:mm a')}</Text>
         </TouchableOpacity>
         {isRange && <>
           <Text> - </Text>
           <TouchableOpacity onPress={() => setSelectingEnd(true)}>
             <Text
-              style={isSelectingEnd && { color: colors.MAIN_COLOR }}>{moment(endDate).format('hh:mm a')}</Text>
+              style={{ color: isSelectingEnd ? colors.MAIN_COLOR : 'black' }}>{moment(endDate).format('hh:mm a')}</Text>
           </TouchableOpacity>
         </>}
       </View>

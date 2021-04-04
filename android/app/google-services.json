@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "507434937360",
+    "firebase_url": "https://testing-41d8c-default-rtdb.firebaseio.com",
+    "project_id": "testing-41d8c",
+    "storage_bucket": "testing-41d8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507434937360:android:247e69885f04547b91ee95",
+        "android_client_info": {
+          "package_name": "com.getstuff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507434937360-f1m9786pvf4spb712f73ffbtko8me7dg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZXiRCFjdjMn7SQWEIM78ajWt5oYTa_6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507434937360-f1m9786pvf4spb712f73ffbtko8me7dg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "507434937360-uct6qgrfe74n29sea1hpbm4l8khdlbbt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.getstuff.ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
