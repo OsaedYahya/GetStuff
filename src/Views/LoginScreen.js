@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, TextInput, TouchableOpacity, View, Image } from 'react-native'
 import { connect } from 'react-redux'
 import React, { useState } from 'react'
 import auth from '@react-native-firebase/auth'
@@ -56,6 +56,8 @@ const LoginScreen = (props) => {
 
   return (
     <View style={{ justifyContent: 'center', alignItems: 'center', flex: 1 }}>
+      <Image style={{width: 80, height: 80}} source={require('../../assets/images/email.png')} />
+      <Text style={{ color: 'black' }}>What's your email?</Text>
       <TextInput style={styles.inputFieldStyle} onChangeText={setEmail}/>
       <TextInput style={styles.inputFieldStyle} onChangeText={setPassword}/>
       <TouchableOpacity style={styles.buttonStyle} onPress={() => signIn()}>
